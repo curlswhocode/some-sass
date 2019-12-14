@@ -1,0 +1,146 @@
+* {
+  font-family: Gt Walsheim Pro;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #4c6ef5;
+  overflow-x: hidden;
+}
+
+body span {
+  font-size: 1.2rem;
+  position: fixed;
+  padding: 0.5em;
+  left: 93vw;
+  width: 3vw;
+}
+
+body span img {
+  width: 100%;
+}
+
+body span:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  width: 100vw;
+  border-bottom: 3px solid #f0f0f0;
+  list-style: none;
+  background-color: rgba(250, 250, 250, 0.7);
+  float: right;
+  width: 50vw;
+  position: fixed;
+  z-index: 999999;
+}
+
+nav ul {
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: #1900ff;
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+main p,
+main button {
+  font-size: 1.4rem;
+}
+
+main p {
+  color: white;
+}
+
+main button {
+  margin-top: 2em;
+  border: 5px solid black;
+  background-color: white;
+  padding: 0.5em;
+  width: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-weight: bolder;
+  -webkit-box-shadow: -8px 8px 0px 0px #1900ff;
+  box-shadow: -8px 8px 0px 0px #1900ff;
+}
+
+main button:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: #32e4af;
+  border-color: #1900ff;
+  cursor: pointer;
+  color: #1900ff;
+}
+
+main h1 {
+  font-size: 3rem;
+  color: #32e4af;
+}
+
+section {
+  height: 100vh;
+  background-color: #fd7e14;
+}
+
+section h1 {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 10rem;
+  color: white;
+  word-break: break-all;
+  padding: 1em;
+}
+/*# sourceMappingURL=index.css.map */

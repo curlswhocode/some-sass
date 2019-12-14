@@ -1,0 +1,118 @@
+// $primaryClr: #4c6ef5;
+$primaryClr: black;
+$hover: #32e4af;
+$secClr: #fd7e14;
+$btn: #1900ff;
+
+* {
+  font-family: Gt Walsheim Pro;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #4c6ef5;
+  overflow-x: hidden;
+  span {
+    font-size: 1.2rem;
+    position: fixed;
+    padding: 0.5em;
+    left: 93vw;
+    width: 3vw;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+nav {
+  display: none;
+  width: 100vw;
+  border-bottom: 3px solid rgb(240, 240, 240);
+  list-style: none;
+  background-color: rgba(250, 250, 250, 0.7);
+  float: right;
+  width: 50vw;
+  position: fixed;
+  z-index: 999999;
+  ul {
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: $primaryClr;
+    &:hover {
+      color: $btn;
+    }
+  }
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  p,
+  button {
+    font-size: 1.4rem;
+  }
+  p {
+    color: white;
+  }
+  button {
+    margin-top: 2em;
+    border: 5px solid $primaryClr;
+    background-color: white;
+    padding: 0.5em;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    color: $primaryClr;
+    font-weight: bolder;
+    -webkit-box-shadow: -8px 8px 0px 0px $btn;
+    -moz-box-shadow: -8px 8px 0px 0px $btn;
+    box-shadow: -8px 8px 0px 0px $btn;
+    &:hover {
+      transition: 0.2s ease-in-out;
+      background-color: $hover;
+      border-color: $btn;
+      cursor: pointer;
+      color: $btn;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: $hover;
+  }
+}
+
+section {
+  height: 100vh;
+  background-color: $secClr;
+  h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 10rem;
+    color: white;
+    word-break: break-all;
+    padding: 1em;
+  }
+}
